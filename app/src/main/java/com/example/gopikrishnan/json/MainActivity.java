@@ -40,7 +40,7 @@ public void onclick(){
                         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
                         conn.setRequestMethod(GET);
                         InputStream in = new BufferedInputStream(conn.getInputStream());
-                        ind = in.toString(); //Converting the thing into a String
+                        ind = in.toString(); //Converting the input to a String
 
                     } catch (MalformedURLException e) {
                         e.printStackTrace();

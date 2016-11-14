@@ -36,7 +36,7 @@ public void onclick(){
                 public void onClick(View v) {
                     try {
 
-                        URL url = new URL("https://date.jsontest.com/");
+                        URL url = new URL("https://date.jsontest.com/");//initializing url
                         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
                         conn.setRequestMethod(GET);
                         InputStream in = new BufferedInputStream(conn.getInputStream());
